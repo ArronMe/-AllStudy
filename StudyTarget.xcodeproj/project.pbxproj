@@ -23,6 +23,12 @@
 		78BCC0421E011AB8002B501E /* MineVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0411E011AB8002B501E /* MineVc.m */; };
 		78BCC0481E012D14002B501E /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0451E012D14002B501E /* CLButton.m */; };
 		78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0471E012D14002B501E /* UIButton+Layout.m */; };
+		94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E86D1E01528A0013103F /* HomePlist.plist */; };
+		94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8711E0153670013103F /* WTSystemInfo.m */; };
+		94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E87E1E0174820013103F /* IdentifyViewController.m */; };
+		94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8801E0174820013103F /* RecognizeViewController.m */; };
+		94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8841E01748E0013103F /* LXDScanCodeController.m */; };
+		94F2E8881E01748E0013103F /* LXDScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8861E01748E0013103F /* LXDScanView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,19 @@
 		78BCC0461E012D14002B501E /* UIButton+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Layout.h"; sourceTree = "<group>"; };
 		78BCC0471E012D14002B501E /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
 		8D1B5B016BD2149E4625AAAA /* Pods-StudyTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.release.xcconfig"; sourceTree = "<group>"; };
+		94F2E86D1E01528A0013103F /* HomePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomePlist.plist; sourceTree = "<group>"; };
+		94F2E8701E0153670013103F /* WTSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSystemInfo.h; sourceTree = "<group>"; };
+		94F2E8711E0153670013103F /* WTSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSystemInfo.m; sourceTree = "<group>"; };
+		94F2E8731E0154180013103F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		94F2E8741E0154B90013103F /* WinTreasureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinTreasureConfig.h; sourceTree = "<group>"; };
+		94F2E87D1E0174820013103F /* IdentifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifyViewController.h; sourceTree = "<group>"; };
+		94F2E87E1E0174820013103F /* IdentifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifyViewController.m; sourceTree = "<group>"; };
+		94F2E87F1E0174820013103F /* RecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeViewController.h; sourceTree = "<group>"; };
+		94F2E8801E0174820013103F /* RecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeViewController.m; sourceTree = "<group>"; };
+		94F2E8831E01748E0013103F /* LXDScanCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanCodeController.h; sourceTree = "<group>"; };
+		94F2E8841E01748E0013103F /* LXDScanCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanCodeController.m; sourceTree = "<group>"; };
+		94F2E8851E01748E0013103F /* LXDScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanView.h; sourceTree = "<group>"; };
+		94F2E8861E01748E0013103F /* LXDScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanView.m; sourceTree = "<group>"; };
 		AF5450F452C58FCCFACB2675 /* Pods-StudyTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +167,7 @@
 			children = (
 				78BCC01F1E0101D2002B501E /* Class */,
 				78BCC0201E0101D2002B501E /* Source */,
+				94F2E86F1E0153530013103F /* Tools */,
 				78BCBFEF1E01019F002B501E /* AppDelegate.h */,
 				78BCBFF01E01019F002B501E /* AppDelegate.m */,
 				78BCBFF81E01019F002B501E /* Assets.xcassets */,
@@ -161,6 +181,7 @@
 		78BCBFEC1E01019F002B501E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				94F2E8731E0154180013103F /* PrefixHeader.pch */,
 				78BCBFED1E01019F002B501E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -228,6 +249,7 @@
 		78BCC0311E0119F1002B501E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				94F2E8691E0150A10013103F /* Model */,
 				78BCC0321E0119F1002B501E /* Controller */,
 				78BCC0331E0119F1002B501E /* View */,
 			);
@@ -278,8 +300,9 @@
 		78BCC0371E0119F1002B501E /* Work */ = {
 			isa = PBXGroup;
 			children = (
+				94F2E87B1E01745C0013103F /* View */,
+				94F2E86C1E0152600013103F /* Model */,
 				78BCC0381E0119F1002B501E /* Controller */,
-				78BCC0391E0119F1002B501E /* View */,
 			);
 			path = Work;
 			sourceTree = "<group>";
@@ -293,13 +316,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		78BCC0391E0119F1002B501E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		78BCC0431E012627002B501E /* Button */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +325,54 @@
 				78BCC0471E012D14002B501E /* UIButton+Layout.m */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		94F2E8691E0150A10013103F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94F2E86C1E0152600013103F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94F2E86D1E01528A0013103F /* HomePlist.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		94F2E86F1E0153530013103F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				94F2E8741E0154B90013103F /* WinTreasureConfig.h */,
+				94F2E8701E0153670013103F /* WTSystemInfo.h */,
+				94F2E8711E0153670013103F /* WTSystemInfo.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		94F2E87B1E01745C0013103F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94F2E87D1E0174820013103F /* IdentifyViewController.h */,
+				94F2E87E1E0174820013103F /* IdentifyViewController.m */,
+				94F2E87F1E0174820013103F /* RecognizeViewController.h */,
+				94F2E8801E0174820013103F /* RecognizeViewController.m */,
+				94F2E87C1E01745C0013103F /* RecognizeTool */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94F2E87C1E01745C0013103F /* RecognizeTool */ = {
+			isa = PBXGroup;
+			children = (
+				94F2E8831E01748E0013103F /* LXDScanCodeController.h */,
+				94F2E8841E01748E0013103F /* LXDScanCodeController.m */,
+				94F2E8851E01748E0013103F /* LXDScanView.h */,
+				94F2E8861E01748E0013103F /* LXDScanView.m */,
+			);
+			path = RecognizeTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +445,7 @@
 				TargetAttributes = {
 					78BCBFE81E01019F002B501E = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q68L398VNY;
 						ProvisioningStyle = Automatic;
 					};
 					78BCC0011E01019F002B501E = {
@@ -422,6 +487,7 @@
 			files = (
 				78BCC0291E010233002B501E /* CLTabBar.plist in Resources */,
 				78BCBFFC1E01019F002B501E /* LaunchScreen.storyboard in Resources */,
+				94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */,
 				78BCBFF91E01019F002B501E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,11 +565,16 @@
 				78BCC03C1E011A3D002B501E /* WorkVc.m in Sources */,
 				78BCC0301E010312002B501E /* BaseViewController.m in Sources */,
 				78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */,
+				94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */,
+				94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */,
 				78BCC0481E012D14002B501E /* CLButton.m in Sources */,
 				78BCBFF11E01019F002B501E /* AppDelegate.m in Sources */,
 				78BCC0271E010222002B501E /* CLTabBar.m in Sources */,
 				78BCC0421E011AB8002B501E /* MineVc.m in Sources */,
+				94F2E8881E01748E0013103F /* LXDScanView.m in Sources */,
+				94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */,
 				78BCBFEE1E01019F002B501E /* main.m in Sources */,
+				94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */,
 				78BCC03F1E011A50002B501E /* HomeVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,7 +715,12 @@
 			baseConfigurationReference = AF5450F452C58FCCFACB2675 /* Pods-StudyTarget.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q68L398VNY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StudyTarget/PrefixHeader.pch";
 				INFOPLIST_FILE = StudyTarget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HillHouse.StudyTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,7 +732,12 @@
 			baseConfigurationReference = 8D1B5B016BD2149E4625AAAA /* Pods-StudyTarget.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = Q68L398VNY;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/StudyTarget/PrefixHeader.pch";
 				INFOPLIST_FILE = StudyTarget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HillHouse.StudyTarget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
