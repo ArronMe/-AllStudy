@@ -21,6 +21,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[CLTabBar alloc]init];
     [self.window makeKeyAndVisible];
+    //我们测试用一下
     //设置tabbar字体的颜色
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor redColor]} forState:UIControlStateSelected];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorHex(333333)} forState:UIControlStateNormal];
