@@ -32,7 +32,7 @@
     searchBtn.titleRect = CGRectMake(35, 10, 120, 20);
     [self.view addSubview:searchBtn];
     searchBtn.frame = CGRectMake(K_WIDTH * 0.5 - 80, 250, 160, 40);
-    searchBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:242/255.0 blue:210/255.0 alpha:1];
+    searchBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:155/255.0 blue:210/255.0 alpha:1];
     }
     //使用分类的方式实现
     {
@@ -46,7 +46,7 @@
         cancelBtn.imageRect = CGRectMake(135, 10, 20, 20);
         [self.view addSubview:cancelBtn];
         cancelBtn.frame = CGRectMake(K_WIDTH * 0.5 - 80, 350, 160, 40);
-        cancelBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:242/255.0 blue:210/255.0 alpha:1];
+        cancelBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:155/255.0 blue:210/255.0 alpha:1];
         
     }
 }
