@@ -7,7 +7,9 @@
 //
 
 #import "WorkVc.h"
+#import "UITableView+PlaceHeader.h"
 #import <objc/runtime.h>
+
 
 @interface WorkVc () <UITableViewDelegate,UITableViewDataSource>
 {
@@ -24,13 +26,21 @@
     // Do any additional setup after loading the view.
     [self createTableView];
     
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"HomePlist" ofType:@"plist"];
-    _dataSource=[[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+
+    _dataSource=[[NSMutableArray alloc] initWithContentsOfFile:@""];
 }
 
 - (void)createTableView
 {
     _tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64) style:UITableViewStylePlain];
+    __weak typeof(_tableView) weakTable = _tableView;
+    [_tableView setReloadBlock:^{
+
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"HomePlist" ofType:@"plist"];
+        _dataSource=[[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+        [weakTable reloadData];
+        
+    }];
     _tableView.delegate=self;
     _tableView.dataSource=self;
     [self.view addSubview:_tableView];

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3A8895F9E0A75B2111DF6A6A /* libPods-StudyTarget.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A733004430C3A0F379101C9 /* libPods-StudyTarget.a */; };
+		7872AA201E02402200B436BB /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872AA191E02402200B436BB /* NSObject+Swizzling.m */; };
+		7872AA211E02402200B436BB /* PlaceHeaderview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872AA1B1E02402200B436BB /* PlaceHeaderview.m */; };
+		7872AA221E02402200B436BB /* UICollectionView+PlaceHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872AA1D1E02402200B436BB /* UICollectionView+PlaceHeader.m */; };
+		7872AA231E02402200B436BB /* UITableView+PlaceHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872AA1F1E02402200B436BB /* UITableView+PlaceHeader.m */; };
 		78BCBFEE1E01019F002B501E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCBFED1E01019F002B501E /* main.m */; };
 		78BCBFF11E01019F002B501E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCBFF01E01019F002B501E /* AppDelegate.m */; };
 		78BCBFF91E01019F002B501E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BCBFF81E01019F002B501E /* Assets.xcassets */; };
@@ -23,19 +27,12 @@
 		78BCC0421E011AB8002B501E /* MineVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0411E011AB8002B501E /* MineVc.m */; };
 		78BCC0481E012D14002B501E /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0451E012D14002B501E /* CLButton.m */; };
 		78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0471E012D14002B501E /* UIButton+Layout.m */; };
-<<<<<<< HEAD
-		78BCC04D1E017B21002B501E /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC04C1E017B21002B501E /* NSObject+Swizzling.m */; };
-		78BCC0501E017EA7002B501E /* PlaceHeaderview.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC04F1E017EA7002B501E /* PlaceHeaderview.m */; };
-		78BCC0531E01816E002B501E /* UITableView+PlaceHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0521E01816E002B501E /* UITableView+PlaceHeader.m */; };
-		78BCC0561E018184002B501E /* UICollectionView+PlaceHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0551E018184002B501E /* UICollectionView+PlaceHeader.m */; };
-=======
 		94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E86D1E01528A0013103F /* HomePlist.plist */; };
 		94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8711E0153670013103F /* WTSystemInfo.m */; };
 		94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E87E1E0174820013103F /* IdentifyViewController.m */; };
 		94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8801E0174820013103F /* RecognizeViewController.m */; };
 		94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8841E01748E0013103F /* LXDScanCodeController.m */; };
 		94F2E8881E01748E0013103F /* LXDScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8861E01748E0013103F /* LXDScanView.m */; };
->>>>>>> 66e09035d4b0a3a2c9a544947c8ee3b09b7f3289
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +54,14 @@
 
 /* Begin PBXFileReference section */
 		6A733004430C3A0F379101C9 /* libPods-StudyTarget.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StudyTarget.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7872AA181E02402200B436BB /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		7872AA191E02402200B436BB /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		7872AA1A1E02402200B436BB /* PlaceHeaderview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceHeaderview.h; sourceTree = "<group>"; };
+		7872AA1B1E02402200B436BB /* PlaceHeaderview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceHeaderview.m; sourceTree = "<group>"; };
+		7872AA1C1E02402200B436BB /* UICollectionView+PlaceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PlaceHeader.h"; sourceTree = "<group>"; };
+		7872AA1D1E02402200B436BB /* UICollectionView+PlaceHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PlaceHeader.m"; sourceTree = "<group>"; };
+		7872AA1E1E02402200B436BB /* UITableView+PlaceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PlaceHeader.h"; sourceTree = "<group>"; };
+		7872AA1F1E02402200B436BB /* UITableView+PlaceHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PlaceHeader.m"; sourceTree = "<group>"; };
 		78BCBFE91E01019F002B501E /* StudyTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BCBFED1E01019F002B501E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78BCBFEF1E01019F002B501E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,14 +92,6 @@
 		78BCC0451E012D14002B501E /* CLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLButton.m; sourceTree = "<group>"; };
 		78BCC0461E012D14002B501E /* UIButton+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Layout.h"; sourceTree = "<group>"; };
 		78BCC0471E012D14002B501E /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
-		78BCC04B1E017B21002B501E /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
-		78BCC04C1E017B21002B501E /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
-		78BCC04E1E017EA7002B501E /* PlaceHeaderview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceHeaderview.h; sourceTree = "<group>"; };
-		78BCC04F1E017EA7002B501E /* PlaceHeaderview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceHeaderview.m; sourceTree = "<group>"; };
-		78BCC0511E01816E002B501E /* UITableView+PlaceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PlaceHeader.h"; sourceTree = "<group>"; };
-		78BCC0521E01816E002B501E /* UITableView+PlaceHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PlaceHeader.m"; sourceTree = "<group>"; };
-		78BCC0541E018184002B501E /* UICollectionView+PlaceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PlaceHeader.h"; sourceTree = "<group>"; };
-		78BCC0551E018184002B501E /* UICollectionView+PlaceHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PlaceHeader.m"; sourceTree = "<group>"; };
 		8D1B5B016BD2149E4625AAAA /* Pods-StudyTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.release.xcconfig"; sourceTree = "<group>"; };
 		94F2E86D1E01528A0013103F /* HomePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomePlist.plist; sourceTree = "<group>"; };
 		94F2E8701E0153670013103F /* WTSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSystemInfo.h; sourceTree = "<group>"; };
@@ -153,6 +150,21 @@
 				6A733004430C3A0F379101C9 /* libPods-StudyTarget.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7872AA171E02402200B436BB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7872AA181E02402200B436BB /* NSObject+Swizzling.h */,
+				7872AA191E02402200B436BB /* NSObject+Swizzling.m */,
+				7872AA1A1E02402200B436BB /* PlaceHeaderview.h */,
+				7872AA1B1E02402200B436BB /* PlaceHeaderview.m */,
+				7872AA1C1E02402200B436BB /* UICollectionView+PlaceHeader.h */,
+				7872AA1D1E02402200B436BB /* UICollectionView+PlaceHeader.m */,
+				7872AA1E1E02402200B436BB /* UITableView+PlaceHeader.h */,
+				7872AA1F1E02402200B436BB /* UITableView+PlaceHeader.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		78BCBFE01E01019F002B501E = {
@@ -223,7 +235,7 @@
 		78BCC01F1E0101D2002B501E /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				78BCC04A1E017AEF002B501E /* Category */,
+				7872AA171E02402200B436BB /* Category */,
 				78BCC0311E0119F1002B501E /* Home */,
 				78BCC0341E0119F1002B501E /* Me */,
 				78BCC0371E0119F1002B501E /* Work */,
@@ -343,21 +355,6 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		78BCC04A1E017AEF002B501E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				78BCC04B1E017B21002B501E /* NSObject+Swizzling.h */,
-				78BCC04C1E017B21002B501E /* NSObject+Swizzling.m */,
-				78BCC0511E01816E002B501E /* UITableView+PlaceHeader.h */,
-				78BCC0521E01816E002B501E /* UITableView+PlaceHeader.m */,
-				78BCC0541E018184002B501E /* UICollectionView+PlaceHeader.h */,
-				78BCC0551E018184002B501E /* UICollectionView+PlaceHeader.m */,
-				78BCC04E1E017EA7002B501E /* PlaceHeaderview.h */,
-				78BCC04F1E017EA7002B501E /* PlaceHeaderview.m */,
-			);
-			path = Category;
-=======
 		94F2E8691E0150A10013103F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,7 +401,6 @@
 				94F2E8861E01748E0013103F /* LXDScanView.m */,
 			);
 			path = RecognizeTool;
->>>>>>> 66e09035d4b0a3a2c9a544947c8ee3b09b7f3289
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,25 +592,22 @@
 				78BCC02F1E010312002B501E /* BaseNavigationController.m in Sources */,
 				78BCC03C1E011A3D002B501E /* WorkVc.m in Sources */,
 				78BCC0301E010312002B501E /* BaseViewController.m in Sources */,
-				78BCC0561E018184002B501E /* UICollectionView+PlaceHeader.m in Sources */,
+				7872AA201E02402200B436BB /* NSObject+Swizzling.m in Sources */,
 				78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */,
-<<<<<<< HEAD
-				78BCC0531E01816E002B501E /* UITableView+PlaceHeader.m in Sources */,
-=======
 				94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */,
 				94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */,
->>>>>>> 66e09035d4b0a3a2c9a544947c8ee3b09b7f3289
 				78BCC0481E012D14002B501E /* CLButton.m in Sources */,
-				78BCC0501E017EA7002B501E /* PlaceHeaderview.m in Sources */,
-				78BCC04D1E017B21002B501E /* NSObject+Swizzling.m in Sources */,
+				7872AA211E02402200B436BB /* PlaceHeaderview.m in Sources */,
 				78BCBFF11E01019F002B501E /* AppDelegate.m in Sources */,
 				78BCC0271E010222002B501E /* CLTabBar.m in Sources */,
 				78BCC0421E011AB8002B501E /* MineVc.m in Sources */,
 				94F2E8881E01748E0013103F /* LXDScanView.m in Sources */,
+				7872AA231E02402200B436BB /* UITableView+PlaceHeader.m in Sources */,
 				94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */,
 				78BCBFEE1E01019F002B501E /* main.m in Sources */,
 				94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */,
 				78BCC03F1E011A50002B501E /* HomeVc.m in Sources */,
+				7872AA221E02402200B436BB /* UICollectionView+PlaceHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,7 +36,7 @@
         _button.frame = CGRectMake(0, 0, 120, 120);
         _button.center = self.center;
         _button.layer.cornerRadius = 60.0;
-        [_button setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [_button setBackgroundImage:[UIImage imageNamed:@"1"] forState:UIControlStateNormal];
         [_button setTitle:@"暂无数据，点击重新加载!" forState:UIControlStateNormal];
         [_button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         [_button setTitleEdgeInsets:UIEdgeInsetsMake(200, -50, 0, -50)];
