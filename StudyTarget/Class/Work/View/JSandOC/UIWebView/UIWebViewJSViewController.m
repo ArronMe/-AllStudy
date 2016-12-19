@@ -13,6 +13,26 @@
 
 @implementation UIWebViewJSViewController
 
+/*****
+ iOS6原生没有提供js直接调用Objective-C的方式，只能通过UIWebView的UIWebViewDelegate协议
+ 
+ -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+ 方法来做拦截，并在这个方法中，根据url来调用Objective-C方法
+ 
+ 
+ (PS)如果你想去掉webview弹出的alert 中的来自XXX网页
+ - (void)webViewDidFinishLoad: (UIWebView *) webView
+ {
+ //重定义web的alert方法,捕获webview弹出的原生alert  可以修改标题和内容等等
+ [webView stringByEvaluatingJavaScriptFromString:@"window.alert = function(message) { window.location = \"myapp:&func=alert&message=\" + message; }"];
+ }
+ Objective-C
+ if([func isEqualToString:@"alert"])
+ {
+ [self showMessage:@"来自网页的提示" message:[param objectForKey:@"message"]];
+ }
+ 
+ *********/
 - (void)viewDidLoad
 {
     [super viewDidLoad];

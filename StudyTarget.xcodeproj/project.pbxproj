@@ -500,14 +500,14 @@
 		94FC8B111E07CF9500A86EC3 /* JSandOC */ = {
 			isa = PBXGroup;
 			children = (
-				94FC8B2B1E07D6D300A86EC3 /* UIWebView */,
-				94FC8B451E07D73300A86EC3 /* JavaScriptCore */,
-				94FC8B461E07D73300A86EC3 /* WKWebView */,
+				94FC8B2B1E07D6D300A86EC3 /* UIWebView<=iOS6 */,
+				94FC8B451E07D73300A86EC3 /* JavaScriptCore>=iOS7 */,
+				94FC8B461E07D73300A86EC3 /* WKWebView>=iOS8 */,
 			);
 			path = JSandOC;
 			sourceTree = "<group>";
 		};
-		94FC8B2B1E07D6D300A86EC3 /* UIWebView */ = {
+		94FC8B2B1E07D6D300A86EC3 /* UIWebView<=iOS6 */ = {
 			isa = PBXGroup;
 			children = (
 				94FC8B2C1E07D6D300A86EC3 /* JSUIWebView.html */,
@@ -525,10 +525,11 @@
 				94FC8B381E07D6D300A86EC3 /* WebView+Alert.h */,
 				94FC8B391E07D6D300A86EC3 /* WebView+Alert.m */,
 			);
+			name = "UIWebView<=iOS6";
 			path = UIWebView;
 			sourceTree = "<group>";
 		};
-		94FC8B451E07D73300A86EC3 /* JavaScriptCore */ = {
+		94FC8B451E07D73300A86EC3 /* JavaScriptCore>=iOS7 */ = {
 			isa = PBXGroup;
 			children = (
 				94FC8B591E07D7B700A86EC3 /* SecondViewController.h */,
@@ -549,10 +550,11 @@
 				94FC8B701E07D7D000A86EC3 /* HighchartsWebViewController.xib */,
 				94FC8B711E07D7D000A86EC3 /* jquery-1.11.0.min.js */,
 			);
+			name = "JavaScriptCore>=iOS7";
 			path = JavaScriptCore;
 			sourceTree = "<group>";
 		};
-		94FC8B461E07D73300A86EC3 /* WKWebView */ = {
+		94FC8B461E07D73300A86EC3 /* WKWebView>=iOS8 */ = {
 			isa = PBXGroup;
 			children = (
 				94FC8B471E07D78C00A86EC3 /* JSWKWebView.html */,
@@ -566,6 +568,7 @@
 				94FC8B4F1E07D78C00A86EC3 /* WKWebViewJSViewController.m */,
 				94FC8B501E07D78C00A86EC3 /* WKWebViewJSViewController.xib */,
 			);
+			name = "WKWebView>=iOS8";
 			path = WKWebView;
 			sourceTree = "<group>";
 		};

@@ -14,6 +14,14 @@
 
 @implementation JSWKWebViewViewController
 
+
+/*****
+ iOS 8引入了一个新的框架——WebKit，之后变得好起来了。在WebKit框架中，有WKWebView可以替换UIKit的UIWebView和AppKit的WebView，而且提供了在两个平台可以一致使用的接口。WebKit框架使得开发者可以在原生App中使用Nitro来提高网页的性能和表现，Nitro就是Safari的JavaScript引擎 WKWebView 不支持JavaScriptCore的方式但提供message handler的方式为JavaScript 与Native通信.
+ 
+ 注：除了这种方法之外，前两种JavaScript交互方法都和Android开发兼容，仅仅是api略不同。
+ 
+*/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"JS调用WKWebView";

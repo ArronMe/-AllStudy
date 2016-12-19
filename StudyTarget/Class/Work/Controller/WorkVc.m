@@ -68,15 +68,11 @@
 {
     NSDictionary *dict =_dataSource[indexPath.row];
     
-//    if (indexPath.row==2) {
-//        UIWebViewJSViewController *webView = [[UIWebViewJSViewController alloc]initWithNibName:@"UIWebViewJSViewController" bundle:nil];
-//        [self.navigationController pushViewController:webView animated:YES];
-//    }
     NSString *VCName=[NSString stringWithFormat:@"%@",[dict objectForKey:@"VC"]];
     Class type = NSClassFromString(VCName);
     UIViewController *viewvc ;
 
-    if ([VCName containsString:@"WebView"]) {
+    if ([VCName containsString:@"WebViewJS"]) {
         viewvc = [[type alloc]initWithNibName:VCName bundle:nil];
     }
     else{
@@ -84,7 +80,6 @@
     }
     [self.navigationController pushViewController:viewvc animated:YES];
 
-    //
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
