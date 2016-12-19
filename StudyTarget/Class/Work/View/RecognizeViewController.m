@@ -11,9 +11,6 @@
 #import "LXDScanCodeController.h"
 #import <AVFoundation/AVFoundation.h>
 
-#import "sys/utsname.h"
-
-
 
 @interface RecognizeViewController ()<LXDScanViewDelegate, LXDScanCodeControllerDelegate>
 
@@ -57,9 +54,7 @@
 #pragma mark - event
 - (void)scan:(id)sender
 {
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    NSString *deviceString = [WTSystemInfo ObtaindeviceString];
     
     if ([deviceString isEqualToString:@"x86_64"]||[deviceString isEqualToString:@"i386"]) {
         
@@ -76,9 +71,7 @@
 
 - (void)jumpToScan:(id)sender
 {
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    NSString *deviceString = [WTSystemInfo ObtaindeviceString];
     
     if ([deviceString isEqualToString:@"x86_64"]||[deviceString isEqualToString:@"i386"]) {
         
@@ -145,14 +138,33 @@
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    [super viewDidDisappear: animated];
-    [self.scanView stop];
+    NSString *deviceString = [WTSystemInfo ObtaindeviceString];
+    
+    if ([deviceString isEqualToString:@"x86_64"]||[deviceString isEqualToString:@"i386"]) {
+        
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle: @"警告" message: [NSString stringWithFormat: @"当前无法打开摄像头"] delegate: nil cancelButtonTitle: @"确定" otherButtonTitles: nil];
+        [alertView show];
+    }
+    else{
+        [self.scanView stop];
+    }
+
 }
 
 
 - (void)dealloc
 {
-    [self.scanView stop];
+    NSString *deviceString = [WTSystemInfo ObtaindeviceString];
+    
+    if ([deviceString isEqualToString:@"x86_64"]||[deviceString isEqualToString:@"i386"]) {
+        
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle: @"警告" message: [NSString stringWithFormat: @"模拟器无法打开摄像头"] delegate: nil cancelButtonTitle: @"确定" otherButtonTitles: nil];
+        [alertView show];
+    }
+    else{
+        
+        [self.scanView stop];
+    }
 }
 
 

@@ -58,7 +58,6 @@
             weakSelf.reloadBlock ();
             
         }
-        
     };
     self.placeHeader = header;
     

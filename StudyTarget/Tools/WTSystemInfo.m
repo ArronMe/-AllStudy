@@ -8,6 +8,9 @@
 
 #import "WTSystemInfo.h"
 
+#import "sys/utsname.h"
+
+
 @implementation WTSystemInfo
 
 + (BOOL) validateMobile:(NSString *)mobile {
@@ -41,4 +44,11 @@
     return [passWordPredicate evaluateWithObject:nickname];
 }
 
++ (NSString *)ObtaindeviceString
+{
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    return deviceString;
+}
 @end

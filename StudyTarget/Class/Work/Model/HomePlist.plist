@@ -14,5 +14,47 @@
 		<key>VC</key>
 		<string>IdentifyViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>UIWebview调用JS</string>
+		<key>VC</key>
+		<string>UIWebViewJSViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>JS调用UIWebView</string>
+		<key>VC</key>
+		<string>JSUIWebViewViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>WKWebView调取JS</string>
+		<key>VC</key>
+		<string>WKWebViewJSViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>JS调用WKWebView</string>
+		<key>VC</key>
+		<string>JSWKWebViewViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>JSC调用OC</string>
+		<key>VC</key>
+		<string>JSCallOCViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>OC调用JSC</string>
+		<key>VC</key>
+		<string>OCCallJSViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Higjtcharts</string>
+		<key>VC</key>
+		<string>HighchartsWebViewController</string>
+	</dict>
 </array>
 </plist>

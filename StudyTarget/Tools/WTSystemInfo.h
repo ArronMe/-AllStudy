@@ -69,4 +69,10 @@
  */
 + (BOOL)validateNickname:(NSString *)nickname;
 
+/**获得手机设备号
+ */
++ (NSString *)ObtaindeviceString;
+
+
+
 @end

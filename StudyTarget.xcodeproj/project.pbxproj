@@ -35,6 +35,38 @@
 		94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8801E0174820013103F /* RecognizeViewController.m */; };
 		94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8841E01748E0013103F /* LXDScanCodeController.m */; };
 		94F2E8881E01748E0013103F /* LXDScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8861E01748E0013103F /* LXDScanView.m */; };
+		94FC8B3A1E07D6D300A86EC3 /* JSUIWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B2C1E07D6D300A86EC3 /* JSUIWebView.html */; };
+		94FC8B3B1E07D6D300A86EC3 /* JSUIWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B2E1E07D6D300A86EC3 /* JSUIWebViewViewController.m */; };
+		94FC8B3C1E07D6D300A86EC3 /* JSUIWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B2F1E07D6D300A86EC3 /* JSUIWebViewViewController.xib */; };
+		94FC8B3D1E07D6D300A86EC3 /* light_advice.png in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B301E07D6D300A86EC3 /* light_advice.png */; };
+		94FC8B3E1E07D6D300A86EC3 /* light_illstration.png in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B311E07D6D300A86EC3 /* light_illstration.png */; };
+		94FC8B3F1E07D6D300A86EC3 /* UIWebViewJS.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B321E07D6D300A86EC3 /* UIWebViewJS.html */; };
+		94FC8B401E07D6D300A86EC3 /* UIWebViewJS_file.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B331E07D6D300A86EC3 /* UIWebViewJS_file.html */; };
+		94FC8B411E07D6D300A86EC3 /* UIWebViewJS_location.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B341E07D6D300A86EC3 /* UIWebViewJS_location.html */; };
+		94FC8B421E07D6D300A86EC3 /* UIWebViewJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B361E07D6D300A86EC3 /* UIWebViewJSViewController.m */; };
+		94FC8B431E07D6D300A86EC3 /* UIWebViewJSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B371E07D6D300A86EC3 /* UIWebViewJSViewController.xib */; };
+		94FC8B441E07D6D300A86EC3 /* WebView+Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B391E07D6D300A86EC3 /* WebView+Alert.m */; };
+		94FC8B511E07D78C00A86EC3 /* JSWKWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B471E07D78C00A86EC3 /* JSWKWebView.html */; };
+		94FC8B521E07D78C00A86EC3 /* JSWKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B491E07D78C00A86EC3 /* JSWKWebViewViewController.m */; };
+		94FC8B531E07D78C00A86EC3 /* JSWKWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B4A1E07D78C00A86EC3 /* JSWKWebViewViewController.xib */; };
+		94FC8B541E07D78C00A86EC3 /* WKWebViewJS_file.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B4B1E07D78C00A86EC3 /* WKWebViewJS_file.html */; };
+		94FC8B551E07D78C00A86EC3 /* WKWebViewJS_location.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B4C1E07D78C00A86EC3 /* WKWebViewJS_location.html */; };
+		94FC8B561E07D78C00A86EC3 /* WKWebViewJS.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B4D1E07D78C00A86EC3 /* WKWebViewJS.html */; };
+		94FC8B571E07D78C00A86EC3 /* WKWebViewJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B4F1E07D78C00A86EC3 /* WKWebViewJSViewController.m */; };
+		94FC8B581E07D78C00A86EC3 /* WKWebViewJSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B501E07D78C00A86EC3 /* WKWebViewJSViewController.xib */; };
+		94FC8B5C1E07D7B700A86EC3 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B5A1E07D7B700A86EC3 /* SecondViewController.m */; };
+		94FC8B5D1E07D7B700A86EC3 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B5B1E07D7B700A86EC3 /* SecondViewController.xib */; };
+		94FC8B621E07D7BF00A86EC3 /* OCCallJSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B5F1E07D7BF00A86EC3 /* OCCallJSViewController.m */; };
+		94FC8B631E07D7BF00A86EC3 /* OCCallJSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B601E07D7BF00A86EC3 /* OCCallJSViewController.xib */; };
+		94FC8B641E07D7BF00A86EC3 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B611E07D7BF00A86EC3 /* test.js */; };
+		94FC8B691E07D7C700A86EC3 /* JSCallOC.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B651E07D7C700A86EC3 /* JSCallOC.html */; };
+		94FC8B6A1E07D7C700A86EC3 /* JSCallOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B671E07D7C700A86EC3 /* JSCallOCViewController.m */; };
+		94FC8B6B1E07D7C700A86EC3 /* JSCallOCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B681E07D7C700A86EC3 /* JSCallOCViewController.xib */; };
+		94FC8B721E07D7D000A86EC3 /* highcharts.js in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B6C1E07D7D000A86EC3 /* highcharts.js */; };
+		94FC8B731E07D7D000A86EC3 /* HighchartsView.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B6D1E07D7D000A86EC3 /* HighchartsView.html */; };
+		94FC8B741E07D7D000A86EC3 /* HighchartsWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC8B6F1E07D7D000A86EC3 /* HighchartsWebViewController.m */; };
+		94FC8B751E07D7D000A86EC3 /* HighchartsWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B701E07D7D000A86EC3 /* HighchartsWebViewController.xib */; };
+		94FC8B761E07D7D000A86EC3 /* jquery-1.11.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B711E07D7D000A86EC3 /* jquery-1.11.0.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +135,7 @@
 		94F2E86D1E01528A0013103F /* HomePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomePlist.plist; sourceTree = "<group>"; };
 		94F2E8701E0153670013103F /* WTSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSystemInfo.h; sourceTree = "<group>"; };
 		94F2E8711E0153670013103F /* WTSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSystemInfo.m; sourceTree = "<group>"; };
-		94F2E8731E0154180013103F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		94F2E8731E0154180013103F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = StudyTarget/PrefixHeader.pch; sourceTree = "<group>"; };
 		94F2E8741E0154B90013103F /* WinTreasureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinTreasureConfig.h; sourceTree = "<group>"; };
 		94F2E87D1E0174820013103F /* IdentifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifyViewController.h; sourceTree = "<group>"; };
 		94F2E87E1E0174820013103F /* IdentifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifyViewController.m; sourceTree = "<group>"; };
@@ -113,6 +145,47 @@
 		94F2E8841E01748E0013103F /* LXDScanCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanCodeController.m; sourceTree = "<group>"; };
 		94F2E8851E01748E0013103F /* LXDScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanView.h; sourceTree = "<group>"; };
 		94F2E8861E01748E0013103F /* LXDScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanView.m; sourceTree = "<group>"; };
+		94FC8B2C1E07D6D300A86EC3 /* JSUIWebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSUIWebView.html; sourceTree = "<group>"; };
+		94FC8B2D1E07D6D300A86EC3 /* JSUIWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSUIWebViewViewController.h; sourceTree = "<group>"; };
+		94FC8B2E1E07D6D300A86EC3 /* JSUIWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSUIWebViewViewController.m; sourceTree = "<group>"; };
+		94FC8B2F1E07D6D300A86EC3 /* JSUIWebViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSUIWebViewViewController.xib; sourceTree = "<group>"; };
+		94FC8B301E07D6D300A86EC3 /* light_advice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_advice.png; sourceTree = "<group>"; };
+		94FC8B311E07D6D300A86EC3 /* light_illstration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_illstration.png; sourceTree = "<group>"; };
+		94FC8B321E07D6D300A86EC3 /* UIWebViewJS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UIWebViewJS.html; sourceTree = "<group>"; };
+		94FC8B331E07D6D300A86EC3 /* UIWebViewJS_file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UIWebViewJS_file.html; sourceTree = "<group>"; };
+		94FC8B341E07D6D300A86EC3 /* UIWebViewJS_location.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = UIWebViewJS_location.html; sourceTree = "<group>"; };
+		94FC8B351E07D6D300A86EC3 /* UIWebViewJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebViewJSViewController.h; sourceTree = "<group>"; };
+		94FC8B361E07D6D300A86EC3 /* UIWebViewJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebViewJSViewController.m; sourceTree = "<group>"; };
+		94FC8B371E07D6D300A86EC3 /* UIWebViewJSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIWebViewJSViewController.xib; sourceTree = "<group>"; };
+		94FC8B381E07D6D300A86EC3 /* WebView+Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WebView+Alert.h"; sourceTree = "<group>"; };
+		94FC8B391E07D6D300A86EC3 /* WebView+Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WebView+Alert.m"; sourceTree = "<group>"; };
+		94FC8B471E07D78C00A86EC3 /* JSWKWebView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSWKWebView.html; sourceTree = "<group>"; };
+		94FC8B481E07D78C00A86EC3 /* JSWKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSWKWebViewViewController.h; sourceTree = "<group>"; };
+		94FC8B491E07D78C00A86EC3 /* JSWKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSWKWebViewViewController.m; sourceTree = "<group>"; };
+		94FC8B4A1E07D78C00A86EC3 /* JSWKWebViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSWKWebViewViewController.xib; sourceTree = "<group>"; };
+		94FC8B4B1E07D78C00A86EC3 /* WKWebViewJS_file.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewJS_file.html; sourceTree = "<group>"; };
+		94FC8B4C1E07D78C00A86EC3 /* WKWebViewJS_location.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewJS_location.html; sourceTree = "<group>"; };
+		94FC8B4D1E07D78C00A86EC3 /* WKWebViewJS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WKWebViewJS.html; sourceTree = "<group>"; };
+		94FC8B4E1E07D78C00A86EC3 /* WKWebViewJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJSViewController.h; sourceTree = "<group>"; };
+		94FC8B4F1E07D78C00A86EC3 /* WKWebViewJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJSViewController.m; sourceTree = "<group>"; };
+		94FC8B501E07D78C00A86EC3 /* WKWebViewJSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WKWebViewJSViewController.xib; sourceTree = "<group>"; };
+		94FC8B591E07D7B700A86EC3 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		94FC8B5A1E07D7B700A86EC3 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		94FC8B5B1E07D7B700A86EC3 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		94FC8B5E1E07D7BF00A86EC3 /* OCCallJSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCCallJSViewController.h; sourceTree = "<group>"; };
+		94FC8B5F1E07D7BF00A86EC3 /* OCCallJSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCCallJSViewController.m; sourceTree = "<group>"; };
+		94FC8B601E07D7BF00A86EC3 /* OCCallJSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCCallJSViewController.xib; sourceTree = "<group>"; };
+		94FC8B611E07D7BF00A86EC3 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
+		94FC8B651E07D7C700A86EC3 /* JSCallOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSCallOC.html; sourceTree = "<group>"; };
+		94FC8B661E07D7C700A86EC3 /* JSCallOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCallOCViewController.h; sourceTree = "<group>"; };
+		94FC8B671E07D7C700A86EC3 /* JSCallOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCallOCViewController.m; sourceTree = "<group>"; };
+		94FC8B681E07D7C700A86EC3 /* JSCallOCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSCallOCViewController.xib; sourceTree = "<group>"; };
+		94FC8B6C1E07D7D000A86EC3 /* highcharts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highcharts.js; sourceTree = "<group>"; };
+		94FC8B6D1E07D7D000A86EC3 /* HighchartsView.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = HighchartsView.html; sourceTree = "<group>"; };
+		94FC8B6E1E07D7D000A86EC3 /* HighchartsWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighchartsWebViewController.h; sourceTree = "<group>"; };
+		94FC8B6F1E07D7D000A86EC3 /* HighchartsWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighchartsWebViewController.m; sourceTree = "<group>"; };
+		94FC8B701E07D7D000A86EC3 /* HighchartsWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HighchartsWebViewController.xib; sourceTree = "<group>"; };
+		94FC8B711E07D7D000A86EC3 /* jquery-1.11.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.11.0.min.js"; sourceTree = "<group>"; };
 		AF5450F452C58FCCFACB2675 /* Pods-StudyTarget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +227,7 @@
 		608F0EC5D79CA7BF44EC97B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94F2E8731E0154180013103F /* PrefixHeader.pch */,
 				6A733004430C3A0F379101C9 /* libPods-StudyTarget.a */,
 			);
 			name = Frameworks;
@@ -227,7 +301,6 @@
 		78BCBFEC1E01019F002B501E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				94F2E8731E0154180013103F /* PrefixHeader.pch */,
 				78BCBFED1E01019F002B501E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -403,6 +476,7 @@
 		94F2E87B1E01745C0013103F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94FC8B111E07CF9500A86EC3 /* JSandOC */,
 				94F2E87D1E0174820013103F /* IdentifyViewController.h */,
 				94F2E87E1E0174820013103F /* IdentifyViewController.m */,
 				94F2E87F1E0174820013103F /* RecognizeViewController.h */,
@@ -421,6 +495,78 @@
 				94F2E8861E01748E0013103F /* LXDScanView.m */,
 			);
 			path = RecognizeTool;
+			sourceTree = "<group>";
+		};
+		94FC8B111E07CF9500A86EC3 /* JSandOC */ = {
+			isa = PBXGroup;
+			children = (
+				94FC8B2B1E07D6D300A86EC3 /* UIWebView */,
+				94FC8B451E07D73300A86EC3 /* JavaScriptCore */,
+				94FC8B461E07D73300A86EC3 /* WKWebView */,
+			);
+			path = JSandOC;
+			sourceTree = "<group>";
+		};
+		94FC8B2B1E07D6D300A86EC3 /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				94FC8B2C1E07D6D300A86EC3 /* JSUIWebView.html */,
+				94FC8B2D1E07D6D300A86EC3 /* JSUIWebViewViewController.h */,
+				94FC8B2E1E07D6D300A86EC3 /* JSUIWebViewViewController.m */,
+				94FC8B2F1E07D6D300A86EC3 /* JSUIWebViewViewController.xib */,
+				94FC8B301E07D6D300A86EC3 /* light_advice.png */,
+				94FC8B311E07D6D300A86EC3 /* light_illstration.png */,
+				94FC8B321E07D6D300A86EC3 /* UIWebViewJS.html */,
+				94FC8B331E07D6D300A86EC3 /* UIWebViewJS_file.html */,
+				94FC8B341E07D6D300A86EC3 /* UIWebViewJS_location.html */,
+				94FC8B351E07D6D300A86EC3 /* UIWebViewJSViewController.h */,
+				94FC8B361E07D6D300A86EC3 /* UIWebViewJSViewController.m */,
+				94FC8B371E07D6D300A86EC3 /* UIWebViewJSViewController.xib */,
+				94FC8B381E07D6D300A86EC3 /* WebView+Alert.h */,
+				94FC8B391E07D6D300A86EC3 /* WebView+Alert.m */,
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		94FC8B451E07D73300A86EC3 /* JavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				94FC8B591E07D7B700A86EC3 /* SecondViewController.h */,
+				94FC8B5A1E07D7B700A86EC3 /* SecondViewController.m */,
+				94FC8B5B1E07D7B700A86EC3 /* SecondViewController.xib */,
+				94FC8B5E1E07D7BF00A86EC3 /* OCCallJSViewController.h */,
+				94FC8B5F1E07D7BF00A86EC3 /* OCCallJSViewController.m */,
+				94FC8B601E07D7BF00A86EC3 /* OCCallJSViewController.xib */,
+				94FC8B611E07D7BF00A86EC3 /* test.js */,
+				94FC8B651E07D7C700A86EC3 /* JSCallOC.html */,
+				94FC8B661E07D7C700A86EC3 /* JSCallOCViewController.h */,
+				94FC8B671E07D7C700A86EC3 /* JSCallOCViewController.m */,
+				94FC8B681E07D7C700A86EC3 /* JSCallOCViewController.xib */,
+				94FC8B6C1E07D7D000A86EC3 /* highcharts.js */,
+				94FC8B6D1E07D7D000A86EC3 /* HighchartsView.html */,
+				94FC8B6E1E07D7D000A86EC3 /* HighchartsWebViewController.h */,
+				94FC8B6F1E07D7D000A86EC3 /* HighchartsWebViewController.m */,
+				94FC8B701E07D7D000A86EC3 /* HighchartsWebViewController.xib */,
+				94FC8B711E07D7D000A86EC3 /* jquery-1.11.0.min.js */,
+			);
+			path = JavaScriptCore;
+			sourceTree = "<group>";
+		};
+		94FC8B461E07D73300A86EC3 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				94FC8B471E07D78C00A86EC3 /* JSWKWebView.html */,
+				94FC8B481E07D78C00A86EC3 /* JSWKWebViewViewController.h */,
+				94FC8B491E07D78C00A86EC3 /* JSWKWebViewViewController.m */,
+				94FC8B4A1E07D78C00A86EC3 /* JSWKWebViewViewController.xib */,
+				94FC8B4B1E07D78C00A86EC3 /* WKWebViewJS_file.html */,
+				94FC8B4C1E07D78C00A86EC3 /* WKWebViewJS_location.html */,
+				94FC8B4D1E07D78C00A86EC3 /* WKWebViewJS.html */,
+				94FC8B4E1E07D78C00A86EC3 /* WKWebViewJSViewController.h */,
+				94FC8B4F1E07D78C00A86EC3 /* WKWebViewJSViewController.m */,
+				94FC8B501E07D78C00A86EC3 /* WKWebViewJSViewController.xib */,
+			);
+			path = WKWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,10 +679,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FC8B751E07D7D000A86EC3 /* HighchartsWebViewController.xib in Resources */,
+				94FC8B561E07D78C00A86EC3 /* WKWebViewJS.html in Resources */,
+				94FC8B761E07D7D000A86EC3 /* jquery-1.11.0.min.js in Resources */,
 				78BCC0291E010233002B501E /* CLTabBar.plist in Resources */,
+				94FC8B431E07D6D300A86EC3 /* UIWebViewJSViewController.xib in Resources */,
+				94FC8B731E07D7D000A86EC3 /* HighchartsView.html in Resources */,
+				94FC8B581E07D78C00A86EC3 /* WKWebViewJSViewController.xib in Resources */,
+				94FC8B3C1E07D6D300A86EC3 /* JSUIWebViewViewController.xib in Resources */,
+				94FC8B721E07D7D000A86EC3 /* highcharts.js in Resources */,
+				94FC8B631E07D7BF00A86EC3 /* OCCallJSViewController.xib in Resources */,
+				94FC8B531E07D78C00A86EC3 /* JSWKWebViewViewController.xib in Resources */,
+				94FC8B3F1E07D6D300A86EC3 /* UIWebViewJS.html in Resources */,
+				94FC8B6B1E07D7C700A86EC3 /* JSCallOCViewController.xib in Resources */,
+				94FC8B511E07D78C00A86EC3 /* JSWKWebView.html in Resources */,
 				78BCBFFC1E01019F002B501E /* LaunchScreen.storyboard in Resources */,
 				94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */,
+				94FC8B401E07D6D300A86EC3 /* UIWebViewJS_file.html in Resources */,
+				94FC8B641E07D7BF00A86EC3 /* test.js in Resources */,
+				94FC8B3E1E07D6D300A86EC3 /* light_illstration.png in Resources */,
+				94FC8B3D1E07D6D300A86EC3 /* light_advice.png in Resources */,
+				94FC8B3A1E07D6D300A86EC3 /* JSUIWebView.html in Resources */,
+				94FC8B551E07D78C00A86EC3 /* WKWebViewJS_location.html in Resources */,
+				94FC8B691E07D7C700A86EC3 /* JSCallOC.html in Resources */,
+				94FC8B541E07D78C00A86EC3 /* WKWebViewJS_file.html in Resources */,
+				94FC8B5D1E07D7B700A86EC3 /* SecondViewController.xib in Resources */,
 				78BCBFF91E01019F002B501E /* Assets.xcassets in Resources */,
+				94FC8B411E07D6D300A86EC3 /* UIWebViewJS_location.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,9 +779,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78BCC02F1E010312002B501E /* BaseNavigationController.m in Sources */,
+				94FC8B571E07D78C00A86EC3 /* WKWebViewJSViewController.m in Sources */,
+				94FC8B741E07D7D000A86EC3 /* HighchartsWebViewController.m in Sources */,
 				78BCC03C1E011A3D002B501E /* WorkVc.m in Sources */,
 				78BCC0301E010312002B501E /* BaseViewController.m in Sources */,
 				78B4C5241E07835A006F37AB /* CLDemo.m in Sources */,
+				94FC8B621E07D7BF00A86EC3 /* OCCallJSViewController.m in Sources */,
 				7872AA201E02402200B436BB /* NSObject+Swizzling.m in Sources */,
 				78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */,
 				94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */,
@@ -622,13 +794,19 @@
 				78BCBFF11E01019F002B501E /* AppDelegate.m in Sources */,
 				78B4C5271E07851C006F37AB /* CLProtocolDemo.m in Sources */,
 				78BCC0271E010222002B501E /* CLTabBar.m in Sources */,
+				94FC8B521E07D78C00A86EC3 /* JSWKWebViewViewController.m in Sources */,
 				78BCC0421E011AB8002B501E /* MineVc.m in Sources */,
+				94FC8B421E07D6D300A86EC3 /* UIWebViewJSViewController.m in Sources */,
 				94F2E8881E01748E0013103F /* LXDScanView.m in Sources */,
+				94FC8B5C1E07D7B700A86EC3 /* SecondViewController.m in Sources */,
 				7872AA231E02402200B436BB /* UITableView+PlaceHeader.m in Sources */,
+				94FC8B6A1E07D7C700A86EC3 /* JSCallOCViewController.m in Sources */,
 				94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */,
 				78BCBFEE1E01019F002B501E /* main.m in Sources */,
 				94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */,
+				94FC8B3B1E07D6D300A86EC3 /* JSUIWebViewViewController.m in Sources */,
 				78BCC03F1E011A50002B501E /* HomeVc.m in Sources */,
+				94FC8B441E07D6D300A86EC3 /* WebView+Alert.m in Sources */,
 				7872AA221E02402200B436BB /* UICollectionView+PlaceHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

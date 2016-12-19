@@ -1,7 +1,7 @@
 //
 //  WorkVc.m
 //  StudyTarget
-//
+//  首页
 //  Created by 赵城林 on 16/12/14.
 //  Copyright © 2016年 com.hillhouse.news. All rights reserved.
 //
@@ -9,6 +9,7 @@
 #import "WorkVc.h"
 #import "UITableView+PlaceHeader.h"
 #import <objc/runtime.h>
+#import "UIWebViewJSViewController.h"
 
 
 @interface WorkVc () <UITableViewDelegate,UITableViewDataSource>
@@ -67,34 +68,23 @@
 {
     NSDictionary *dict =_dataSource[indexPath.row];
     
+//    if (indexPath.row==2) {
+//        UIWebViewJSViewController *webView = [[UIWebViewJSViewController alloc]initWithNibName:@"UIWebViewJSViewController" bundle:nil];
+//        [self.navigationController pushViewController:webView animated:YES];
+//    }
     NSString *VCName=[NSString stringWithFormat:@"%@",[dict objectForKey:@"VC"]];
     Class type = NSClassFromString(VCName);
-    UIViewController *viewvc = [[type alloc]init];
+    UIViewController *viewvc ;
+
+    if ([VCName containsString:@"WebView"]) {
+        viewvc = [[type alloc]initWithNibName:VCName bundle:nil];
+    }
+    else{
+        viewvc = [[type alloc]init];
+    }
     [self.navigationController pushViewController:viewvc animated:YES];
-    
+
     //
-
-    
-//    const char *new = [VCName cStringUsingEncoding:NSASCIIStringEncoding];
-//
-//    Class newClass = object_getClass(VCName);
-//    if (!newClass) {
-//        Class superClass = [NSObject class];
-//        newClass = objc_allocateClassPair(superClass, new, 0);
-//        objc_registerClassPair(newClass);
-//        
-//    }
-//    id instance = [[newClass alloc]init];
-//    [self.navigationController pushViewController:instance animated:YES];
-    
-    
-    
-    
-    
-
-
-  
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
