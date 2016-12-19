@@ -20,11 +20,12 @@
         
     });
 }
+
+
 - (void) checkEmpty
 {
     BOOL isEmpty = YES;//flag标示
-    
-    id <UICollectionViewDataSource> dataSource = self.dataSource;
+    id<UICollectionViewDataSource>dataSource = self.dataSource;
     NSInteger sections = 1;//默认为一个分区
     //获取当前TableViewyou多少个分区
     if ([dataSource respondsToSelector:@selector(numberOfSectionsInCollectionView:)]) {

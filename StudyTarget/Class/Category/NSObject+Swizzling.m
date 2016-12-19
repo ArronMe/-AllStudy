@@ -16,6 +16,7 @@
     Method originalMethod = class_getInstanceMethod(newClass, originalSelector);
     Method swizzingMethod = class_getInstanceMethod(newClass, SwizzlingSelector);
     
+    //给当前类添加一个originalSelector方法，实现是swizzingMethod
     BOOL added = class_addMethod(newClass, originalSelector, method_getImplementation(swizzingMethod), method_getTypeEncoding(swizzingMethod));
     if (added) {
         class_replaceMethod(newClass, SwizzlingSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));

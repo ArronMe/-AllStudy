@@ -10,7 +10,8 @@
 #import "CLButton.h"
 #import "UIButton+Layout.h"
 #define K_WIDTH  [UIScreen mainScreen].bounds.size.width
-
+#import "CLProtocolDemo.h"
+#import "CLDemo.h"
 
 @interface HomeVc ()
 
@@ -49,6 +50,9 @@
         cancelBtn.backgroundColor = [UIColor colorWithRed:255/255.0 green:155/255.0 blue:210/255.0 alpha:1];
         
     }
+    //动态代理模式的应用很多，特别是在不能修改被代理类的前提下，要对执行某些方法时需要打log，或者捕捉异常处理时，是一个非常方便的方法，
+    id<CLProtocol>object = [[CLProtocolDemo alloc]initWithObject:[[CLDemo alloc] init]];
+    [object doOtherThing];
 }
 
 - (void)didReceiveMemoryWarning {

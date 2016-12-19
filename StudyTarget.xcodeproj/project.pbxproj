@@ -12,6 +12,8 @@
 		7872AA211E02402200B436BB /* PlaceHeaderview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872AA1B1E02402200B436BB /* PlaceHeaderview.m */; };
 		7872AA221E02402200B436BB /* UICollectionView+PlaceHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872AA1D1E02402200B436BB /* UICollectionView+PlaceHeader.m */; };
 		7872AA231E02402200B436BB /* UITableView+PlaceHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7872AA1F1E02402200B436BB /* UITableView+PlaceHeader.m */; };
+		78B4C5241E07835A006F37AB /* CLDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4C5231E07835A006F37AB /* CLDemo.m */; };
+		78B4C5271E07851C006F37AB /* CLProtocolDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B4C5261E07851C006F37AB /* CLProtocolDemo.m */; };
 		78BCBFEE1E01019F002B501E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCBFED1E01019F002B501E /* main.m */; };
 		78BCBFF11E01019F002B501E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCBFF01E01019F002B501E /* AppDelegate.m */; };
 		78BCBFF91E01019F002B501E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78BCBFF81E01019F002B501E /* Assets.xcassets */; };
@@ -62,6 +64,11 @@
 		7872AA1D1E02402200B436BB /* UICollectionView+PlaceHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PlaceHeader.m"; sourceTree = "<group>"; };
 		7872AA1E1E02402200B436BB /* UITableView+PlaceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PlaceHeader.h"; sourceTree = "<group>"; };
 		7872AA1F1E02402200B436BB /* UITableView+PlaceHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PlaceHeader.m"; sourceTree = "<group>"; };
+		78B4C5211E07825C006F37AB /* CLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLProtocol.h; sourceTree = "<group>"; };
+		78B4C5221E07835A006F37AB /* CLDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDemo.h; sourceTree = "<group>"; };
+		78B4C5231E07835A006F37AB /* CLDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDemo.m; sourceTree = "<group>"; };
+		78B4C5251E07851C006F37AB /* CLProtocolDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLProtocolDemo.h; sourceTree = "<group>"; };
+		78B4C5261E07851C006F37AB /* CLProtocolDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLProtocolDemo.m; sourceTree = "<group>"; };
 		78BCBFE91E01019F002B501E /* StudyTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BCBFED1E01019F002B501E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		78BCBFEF1E01019F002B501E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -167,6 +174,18 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		78B4C51D1E0781D6006F37AB /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				78B4C5211E07825C006F37AB /* CLProtocol.h */,
+				78B4C5221E07835A006F37AB /* CLDemo.h */,
+				78B4C5231E07835A006F37AB /* CLDemo.m */,
+				78B4C5251E07851C006F37AB /* CLProtocolDemo.h */,
+				78B4C5261E07851C006F37AB /* CLProtocolDemo.m */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
 		78BCBFE01E01019F002B501E = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +254,7 @@
 		78BCC01F1E0101D2002B501E /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				78B4C51D1E0781D6006F37AB /* delegate */,
 				7872AA171E02402200B436BB /* Category */,
 				78BCC0311E0119F1002B501E /* Home */,
 				78BCC0341E0119F1002B501E /* Me */,
@@ -592,6 +612,7 @@
 				78BCC02F1E010312002B501E /* BaseNavigationController.m in Sources */,
 				78BCC03C1E011A3D002B501E /* WorkVc.m in Sources */,
 				78BCC0301E010312002B501E /* BaseViewController.m in Sources */,
+				78B4C5241E07835A006F37AB /* CLDemo.m in Sources */,
 				7872AA201E02402200B436BB /* NSObject+Swizzling.m in Sources */,
 				78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */,
 				94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */,
@@ -599,6 +620,7 @@
 				78BCC0481E012D14002B501E /* CLButton.m in Sources */,
 				7872AA211E02402200B436BB /* PlaceHeaderview.m in Sources */,
 				78BCBFF11E01019F002B501E /* AppDelegate.m in Sources */,
+				78B4C5271E07851C006F37AB /* CLProtocolDemo.m in Sources */,
 				78BCC0271E010222002B501E /* CLTabBar.m in Sources */,
 				78BCC0421E011AB8002B501E /* MineVc.m in Sources */,
 				94F2E8881E01748E0013103F /* LXDScanView.m in Sources */,

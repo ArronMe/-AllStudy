@@ -8,7 +8,7 @@
 
 #import "PlaceHeaderview.h"
 
-@interface PlaceHeaderview ()
+@interface PlaceHeaderview ()<UIWebViewDelegate>
 @property (nonatomic, strong) UIButton *button;
 
 @end
