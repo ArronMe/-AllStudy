@@ -32,12 +32,31 @@
     return self;
 }
 
-
 #pragma mark - life
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    self.navigationController.navigationBar.hidden=YES;
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview: self.scanView];
+    [self createBackButton];
+}
+
+- (void)createBackButton
+{
+    UIButton *btn =[UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame=CGRectMake(20, 40, 40, 15);
+    [btn setTitle:@"返回" forState:0];
+    btn.titleLabel.font=[UIFont fontWithName:@"PingFang" size:14];
+    [btn addTarget:self action:@selector(backClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)backClick:(UIButton *)btn
+{
+    [self.scanView stop];
+    self.navigationController.navigationBar.hidden=NO;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -49,6 +68,7 @@
 - (void)viewDidDisappear:(BOOL)animated
 {
     [super viewDidDisappear: animated];
+    self.navigationController.navigationBar.hidden=NO;
     [self.scanView stop];
 }
 
@@ -68,11 +88,13 @@
  */
 - (void)scanView:(LXDScanView *)scanView codeInfo:(NSString *)codeInfo
 {
-    if ([_scanDelegate respondsToSelector: @selector(scanCodeController:codeInfo:)]) {
-        [_scanDelegate scanCodeController: self codeInfo: codeInfo];
-        [self.navigationController popViewControllerAnimated: YES];
-    } else {
-        [[NSNotificationCenter defaultCenter] postNotificationName: LXDSuccessScanQRCodeNotification object: self userInfo: @{ LXDScanQRCodeMessageKey: codeInfo }];
+    NSURL * url = [NSURL URLWithString: codeInfo];
+    if ([[UIApplication sharedApplication] canOpenURL: url]) {
+        [[UIApplication sharedApplication] openURL: url];
+    }
+    else {
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle: @"警告" message: [NSString stringWithFormat: @"%@:%@", @"无法解析的二维码", codeInfo] delegate: nil cancelButtonTitle: @"确定" otherButtonTitles: nil];
+        [alertView show];
     }
 }
 

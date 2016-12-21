@@ -23,9 +23,6 @@
  */
 @interface LXDScanCodeController : UIViewController
 
-/*! 扫描回调代理人*/
-@property (nonatomic, weak) id<LXDScanCodeControllerDelegate> scanDelegate;
-
 /*! 扫描构造器*/
 + (instancetype)scanCodeController;
 

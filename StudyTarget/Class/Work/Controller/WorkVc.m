@@ -10,6 +10,9 @@
 #import "UITableView+PlaceHeader.h"
 #import <objc/runtime.h>
 #import "UIWebViewJSViewController.h"
+#import "LXDScanView.h"
+#import "LXDScanCodeController.h"
+#import <AVFoundation/AVFoundation.h>
 
 
 @interface WorkVc () <UITableViewDelegate,UITableViewDataSource>
@@ -75,9 +78,32 @@
     if ([VCName containsString:@"WebViewJS"]) {
         viewvc = [[type alloc]initWithNibName:VCName bundle:nil];
     }
+    else if (indexPath.row==0){
+        NSString *deviceString = [WTSystemInfo ObtaindeviceString];
+        
+        if ([deviceString isEqualToString:@"x86_64"]||[deviceString isEqualToString:@"i386"]) {
+            
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle: @"警告" message: [NSString stringWithFormat: @"当前无法打开摄像头"] delegate: nil cancelButtonTitle: @"确定" otherButtonTitles: nil];
+            [alertView show];
+        }
+        else{
+            NSString *deviceString = [WTSystemInfo ObtaindeviceString];
+            
+            if ([deviceString isEqualToString:@"x86_64"]||[deviceString isEqualToString:@"i386"]) {
+                
+                UIAlertView * alertView = [[UIAlertView alloc] initWithTitle: @"警告" message: [NSString stringWithFormat: @"当前无法打开摄像头"] delegate: nil cancelButtonTitle: @"确定" otherButtonTitles: nil];
+                [alertView show];
+            }
+            else{
+                LXDScanCodeController * scanCodeController = [LXDScanCodeController scanCodeController];
+                [scanCodeController setHidesBottomBarWhenPushed:YES];
+                [self.navigationController pushViewController: scanCodeController animated: YES];
+            }
+        }
+    }
     else{
         viewvc = [[type alloc]init];
-    }
+            }
     [self.navigationController pushViewController:viewvc animated:YES];
 
 }

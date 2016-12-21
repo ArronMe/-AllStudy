@@ -299,11 +299,11 @@ NSString * const LXDScanQRCodeMessageKey = @"LXDScanQRCodeMessageKey";
 /**
  *  点击空白处停止扫描
  */
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [self stop];
-    [self removeFromSuperview];
-}
+//- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+//{
+//    [self stop];
+//    [self removeFromSuperview];
+//}
 
 
 #pragma mark - AVCaptureMetadataOutputObjectsDelegate

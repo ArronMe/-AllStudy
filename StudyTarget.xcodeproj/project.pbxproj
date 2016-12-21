@@ -29,10 +29,10 @@
 		78BCC0421E011AB8002B501E /* MineVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0411E011AB8002B501E /* MineVc.m */; };
 		78BCC0481E012D14002B501E /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0451E012D14002B501E /* CLButton.m */; };
 		78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0471E012D14002B501E /* UIButton+Layout.m */; };
+		94663F3C1E08CC4D0022EE6B /* YMDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94663F3B1E08CC4D0022EE6B /* YMDragView.m */; };
 		94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E86D1E01528A0013103F /* HomePlist.plist */; };
 		94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8711E0153670013103F /* WTSystemInfo.m */; };
 		94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E87E1E0174820013103F /* IdentifyViewController.m */; };
-		94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8801E0174820013103F /* RecognizeViewController.m */; };
 		94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8841E01748E0013103F /* LXDScanCodeController.m */; };
 		94F2E8881E01748E0013103F /* LXDScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8861E01748E0013103F /* LXDScanView.m */; };
 		94FC8B3A1E07D6D300A86EC3 /* JSUIWebView.html in Resources */ = {isa = PBXBuildFile; fileRef = 94FC8B2C1E07D6D300A86EC3 /* JSUIWebView.html */; };
@@ -132,6 +132,8 @@
 		78BCC0461E012D14002B501E /* UIButton+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Layout.h"; sourceTree = "<group>"; };
 		78BCC0471E012D14002B501E /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
 		8D1B5B016BD2149E4625AAAA /* Pods-StudyTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.release.xcconfig"; sourceTree = "<group>"; };
+		94663F3A1E08CC4D0022EE6B /* YMDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDragView.h; sourceTree = "<group>"; };
+		94663F3B1E08CC4D0022EE6B /* YMDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDragView.m; sourceTree = "<group>"; };
 		94F2E86D1E01528A0013103F /* HomePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomePlist.plist; sourceTree = "<group>"; };
 		94F2E8701E0153670013103F /* WTSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSystemInfo.h; sourceTree = "<group>"; };
 		94F2E8711E0153670013103F /* WTSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSystemInfo.m; sourceTree = "<group>"; };
@@ -139,8 +141,6 @@
 		94F2E8741E0154B90013103F /* WinTreasureConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinTreasureConfig.h; sourceTree = "<group>"; };
 		94F2E87D1E0174820013103F /* IdentifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifyViewController.h; sourceTree = "<group>"; };
 		94F2E87E1E0174820013103F /* IdentifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifyViewController.m; sourceTree = "<group>"; };
-		94F2E87F1E0174820013103F /* RecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeViewController.h; sourceTree = "<group>"; };
-		94F2E8801E0174820013103F /* RecognizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecognizeViewController.m; sourceTree = "<group>"; };
 		94F2E8831E01748E0013103F /* LXDScanCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanCodeController.h; sourceTree = "<group>"; };
 		94F2E8841E01748E0013103F /* LXDScanCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDScanCodeController.m; sourceTree = "<group>"; };
 		94F2E8851E01748E0013103F /* LXDScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDScanView.h; sourceTree = "<group>"; };
@@ -448,6 +448,15 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		94663F391E08CBF50022EE6B /* DragView */ = {
+			isa = PBXGroup;
+			children = (
+				94663F3A1E08CC4D0022EE6B /* YMDragView.h */,
+				94663F3B1E08CC4D0022EE6B /* YMDragView.m */,
+			);
+			path = DragView;
+			sourceTree = "<group>";
+		};
 		94F2E8691E0150A10013103F /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,11 +485,10 @@
 		94F2E87B1E01745C0013103F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94663F391E08CBF50022EE6B /* DragView */,
 				94FC8B111E07CF9500A86EC3 /* JSandOC */,
 				94F2E87D1E0174820013103F /* IdentifyViewController.h */,
 				94F2E87E1E0174820013103F /* IdentifyViewController.m */,
-				94F2E87F1E0174820013103F /* RecognizeViewController.h */,
-				94F2E8801E0174820013103F /* RecognizeViewController.m */,
 				94F2E87C1E01745C0013103F /* RecognizeTool */,
 			);
 			path = View;
@@ -790,7 +798,7 @@
 				94FC8B621E07D7BF00A86EC3 /* OCCallJSViewController.m in Sources */,
 				7872AA201E02402200B436BB /* NSObject+Swizzling.m in Sources */,
 				78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */,
-				94F2E8821E0174820013103F /* RecognizeViewController.m in Sources */,
+				94663F3C1E08CC4D0022EE6B /* YMDragView.m in Sources */,
 				94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */,
 				78BCC0481E012D14002B501E /* CLButton.m in Sources */,
 				7872AA211E02402200B436BB /* PlaceHeaderview.m in Sources */,
