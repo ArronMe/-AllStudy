@@ -29,6 +29,7 @@
 		78BCC0421E011AB8002B501E /* MineVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0411E011AB8002B501E /* MineVc.m */; };
 		78BCC0481E012D14002B501E /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0451E012D14002B501E /* CLButton.m */; };
 		78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0471E012D14002B501E /* UIButton+Layout.m */; };
+		944C98E61E1CA259003F1736 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944C98E51E1CA259003F1736 /* TouchViewController.m */; };
 		94663F3C1E08CC4D0022EE6B /* YMDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94663F3B1E08CC4D0022EE6B /* YMDragView.m */; };
 		94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E86D1E01528A0013103F /* HomePlist.plist */; };
 		94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8711E0153670013103F /* WTSystemInfo.m */; };
@@ -132,6 +133,8 @@
 		78BCC0461E012D14002B501E /* UIButton+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Layout.h"; sourceTree = "<group>"; };
 		78BCC0471E012D14002B501E /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
 		8D1B5B016BD2149E4625AAAA /* Pods-StudyTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.release.xcconfig"; sourceTree = "<group>"; };
+		944C98E41E1CA259003F1736 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
+		944C98E51E1CA259003F1736 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
 		94663F3A1E08CC4D0022EE6B /* YMDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDragView.h; sourceTree = "<group>"; };
 		94663F3B1E08CC4D0022EE6B /* YMDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDragView.m; sourceTree = "<group>"; };
 		94F2E86D1E01528A0013103F /* HomePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomePlist.plist; sourceTree = "<group>"; };
@@ -448,6 +451,15 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		944C98E31E1CA244003F1736 /* 3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				944C98E41E1CA259003F1736 /* TouchViewController.h */,
+				944C98E51E1CA259003F1736 /* TouchViewController.m */,
+			);
+			path = 3DTouch;
+			sourceTree = "<group>";
+		};
 		94663F391E08CBF50022EE6B /* DragView */ = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +497,7 @@
 		94F2E87B1E01745C0013103F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				944C98E31E1CA244003F1736 /* 3DTouch */,
 				94663F391E08CBF50022EE6B /* DragView */,
 				94FC8B111E07CF9500A86EC3 /* JSandOC */,
 				94F2E87D1E0174820013103F /* IdentifyViewController.h */,
@@ -790,6 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78BCC02F1E010312002B501E /* BaseNavigationController.m in Sources */,
+				944C98E61E1CA259003F1736 /* TouchViewController.m in Sources */,
 				94FC8B571E07D78C00A86EC3 /* WKWebViewJSViewController.m in Sources */,
 				94FC8B741E07D7D000A86EC3 /* HighchartsWebViewController.m in Sources */,
 				78BCC03C1E011A3D002B501E /* WorkVc.m in Sources */,

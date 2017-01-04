@@ -9,12 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @class LXDScanCodeController;
-@protocol LXDScanCodeControllerDelegate <NSObject>
-
-- (void)scanCodeController: (LXDScanCodeController *)scanCodeController codeInfo: (NSString *)codeInfo;
-
-@end
-
 /*!
  *  @class
  *

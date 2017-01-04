@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "CLTabBar.h"
 #import <YYKit.h>
+#import "TouchViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,9 +28,27 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorHex(333333)} forState:UIControlStateNormal];
     [UITabBar appearance].translucent = NO;
 
+    
     return YES;
 }
 
+
+#pragma mark -- 处理3DTouch触发事件
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
+{
+    //判断先前我们设置的唯一标识
+    if([shortcutItem.type isEqualToString:@"touchShare.bundle"]){
+       
+        TouchViewController *vc =[[TouchViewController alloc] init];
+        //设置当前的VC 为rootVC
+        [self.window.rootViewController presentViewController:vc animated:YES completion:^{
+            
+        }];
+    }
+    else{
+        NSLog(@"error");
+    }
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
