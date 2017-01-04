@@ -42,11 +42,10 @@
         TouchViewController *vc =[[TouchViewController alloc] init];
         //设置当前的VC 为rootVC
         [self.window.rootViewController presentViewController:vc animated:YES completion:^{
-            
         }];
     }
     else{
-        NSLog(@"error");
+        NSLog(@"没有匹配3DTouch的识别符");
     }
 }
 
