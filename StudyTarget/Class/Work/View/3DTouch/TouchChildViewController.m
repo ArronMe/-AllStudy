@@ -99,7 +99,6 @@
         _bottom.constant = ((UITouch *)[arrayTouch lastObject]).force * 100;
 
     }
-    
 }
 
 //按住移动or压力值改变时的回调
