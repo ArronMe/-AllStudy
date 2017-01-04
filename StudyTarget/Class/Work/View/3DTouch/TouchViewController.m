@@ -7,9 +7,14 @@
 //
 
 #import "TouchViewController.h"
+#import "TouchChildViewController.h"
 
-@interface TouchViewController ()<UIViewControllerPreviewingDelegate>
+@interface TouchViewController ()<UIViewControllerPreviewingDelegate,UITableViewDelegate,UITableViewDataSource>
 //应该判断该控制器当前是否实现了3dtouch手势 如果实现的话最好禁用长按手势
+{
+    UITableView *_tableView;
+    NSMutableArray *_myArray;
+}
 @end
 
 /*
@@ -41,43 +46,101 @@
     // Do any additional setup after loading the view.
     
     UIButton *returnBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    returnBtn.frame = CGRectMake(50, 100, 100, 30);
-    [returnBtn setTitle:@"返回首页" forState:0];
+    returnBtn.frame = CGRectMake(10, 30, 50, 20);
+    [returnBtn setTitle:@"返回" forState:0];
     [returnBtn addTarget:self action:@selector(returnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:returnBtn];
     
-    if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
-        NSLog(@"你的手机支持3D Touch!");
-        [self registerForPreviewingWithDelegate:(id)self sourceView:self.view];
-        
-        // 如果实现了长按手势要禁止
-        //self.longPress.enabled = NO;
+    _myArray = [[NSMutableArray alloc]init];
+    for (NSInteger i = 0; i < 20; i++) {
+        [_myArray addObject:[NSString stringWithFormat:@"test%li",i]];
     }
-    else {
-        NSLog(@"你的手机暂不支持3D Touch!");
-        //self.longPress.enabled = YES;
+    NSArray *viewcontrollers=self.navigationController.viewControllers;
+    if (viewcontrollers.count>1) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-49) style:UITableViewStylePlain];
     }
+    else{
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight-64-49) style:UITableViewStylePlain];
+    }
+    _tableView.delegate=self;
+    _tableView.dataSource=self;
+    [self.view addSubview:_tableView];
+    
 }
 
 
 - (void)returnClick:(UIButton *)btn
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    NSArray *viewcontrollers=self.navigationController.viewControllers;
+    if (viewcontrollers.count>1) {
+        if ([viewcontrollers objectAtIndex:viewcontrollers.count-1]==self) {
+            //push方式
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }
+    else{
+        //present方式
+        [self dismissViewControllerAnimated:YES completion:^{
+            
+        }];
+    }
 }
-#pragma mark -- 点击进入预览模式： 实现该协议方法
-- (UIViewController *)previewingContext:(id)previewingContext viewControllerForLocation:(CGPoint)location
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self;
+    return _myArray.count;
 }
-#pragma mark -- 继续按压进入：实现该协议
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"myCell"];
+    }
+    cell.textLabel.text = _myArray[indexPath.row];
+    if (self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable) {
+        NSLog(@"3D Touch  可用!");
+        //给cell注册3DTouch的peek（预览）和pop功能
+        [self registerForPreviewingWithDelegate:self sourceView:cell];
+        // 如果实现了长按手势要禁止
+        //self.longPress.enabled = NO;
+    } else {
+        NSLog(@"3D Touch 无效");
+        //self.longPress.enabled = YES;
+    }
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    TouchChildViewController *childVC = [[TouchChildViewController alloc] init];
+    childVC.str = [NSString stringWithFormat:@"我是%@,用力按一下进来",_myArray[indexPath.row]];
+    [self.navigationController pushViewController:childVC animated:YES];
+}
+
+
+#pragma mark -- 点击进入peek(预览)模式：(一般用于cell中)
+- (nullable UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
+{
+    //获取按压的cell所在行，[previewingContext sourceView]就是按压的那个视图
+    NSIndexPath *indexPath = [_tableView indexPathForCell:(UITableViewCell *)[previewingContext sourceView]];
+ 
+    //设定预览的界面
+    TouchChildViewController *childVC = [[TouchChildViewController alloc] init];
+    childVC.preferredContentSize = CGSizeMake(0.0f,500.0f);
+    childVC.str = [NSString stringWithFormat:@"我是%@,用力按一下进来",_myArray[indexPath.row]];
+   
+    //调整不被虚化的范围，按压的那个cell不被虚化（轻轻按压时周边会被虚化，再少用力展示预览，再加力跳页至设定界面）
+    CGRect rect = CGRectMake(0, 0, self.view.frame.size.width,40);
+    previewingContext.sourceRect = rect;
+    //返回预览界面
+    return childVC;
+}
+#pragma mark --pop继续按压进入
 - (void)previewingContext:(id<UIViewControllerPreviewing>)previewingContext commitViewController:(UIViewController *)viewControllerToCommit
 {
+    [self showViewController:viewControllerToCommit sender:self];
     NSLog(@"继续按压");
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

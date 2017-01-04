@@ -13,6 +13,7 @@
 #import "LXDScanView.h"
 #import "LXDScanCodeController.h"
 #import <AVFoundation/AVFoundation.h>
+#import "TouchChildViewController.h"
 
 
 @interface WorkVc () <UITableViewDelegate,UITableViewDataSource>

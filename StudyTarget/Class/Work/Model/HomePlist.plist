@@ -56,5 +56,11 @@
 		<key>VC</key>
 		<string>HighchartsWebViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>3D Touch</string>
+		<key>VC</key>
+		<string>TouchViewController</string>
+	</dict>
 </array>
 </plist>

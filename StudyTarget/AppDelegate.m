@@ -10,6 +10,8 @@
 #import "CLTabBar.h"
 #import <YYKit.h>
 #import "TouchViewController.h"
+#import "TouchChildViewController.h"
+#import "WorkVc.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +30,9 @@
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorHex(333333)} forState:UIControlStateNormal];
     [UITabBar appearance].translucent = NO;
 
-    
+    //创建应用图标上的3D touch快捷选项
+    [self creatShortcutItem];
+
     return YES;
 }
 
@@ -38,15 +42,43 @@
 {
     //判断先前我们设置的唯一标识
     if([shortcutItem.type isEqualToString:@"touchShare.bundle"]){
-       
-        TouchViewController *vc =[[TouchViewController alloc] init];
         //设置当前的VC 为rootVC
+        TouchViewController *vc =[[TouchViewController alloc] init];
+        [self.window.rootViewController presentViewController:vc animated:YES completion:^{
+        }];
+    }
+    else if ([shortcutItem.type isEqualToString:@"com.mycompany.myapp.search"]){
+        //进入搜索界面
+        TouchChildViewController *childVC = [[TouchChildViewController alloc] init];
+        [self.window.rootViewController presentViewController:childVC animated:YES completion:^{
+        }];
+    }
+    else if ([shortcutItem.type isEqualToString:@"com.mycompany.myapp.share"])
+    {//进入分享界面
+        NSArray *arr = @[@"hello 3D Touch"];
+        UIActivityViewController *vc = [[UIActivityViewController alloc]initWithActivityItems:arr applicationActivities:nil];
         [self.window.rootViewController presentViewController:vc animated:YES completion:^{
         }];
     }
     else{
-        NSLog(@"没有匹配3DTouch的识别符");
+        NSLog(@"没有3DTouch的识别符");
     }
+    
+    if (completionHandler) {
+        completionHandler(YES);
+    }
+}
+
+//创建应用图标上的3D touch快捷选项
+- (void)creatShortcutItem {
+    //创建系统风格的icon
+    UIApplicationShortcutIcon *icon = [UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare];
+    //    //创建自定义图标的icon
+    //    UIApplicationShortcutIcon *icon2 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"分享.png"];
+    //创建快捷选项
+    UIApplicationShortcutItem * item = [[UIApplicationShortcutItem alloc]initWithType:@"com.mycompany.myapp.share" localizedTitle:@"分享" localizedSubtitle:@"分享副标题" icon:icon userInfo:nil];
+    //添加到快捷选项数组
+    [UIApplication sharedApplication].shortcutItems = @[item];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

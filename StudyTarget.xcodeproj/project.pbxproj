@@ -30,6 +30,7 @@
 		78BCC0481E012D14002B501E /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0451E012D14002B501E /* CLButton.m */; };
 		78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0471E012D14002B501E /* UIButton+Layout.m */; };
 		944C98E61E1CA259003F1736 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944C98E51E1CA259003F1736 /* TouchViewController.m */; };
+		944C98EC1E1CCFE4003F1736 /* TouchChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944C98EB1E1CCFE4003F1736 /* TouchChildViewController.m */; };
 		94663F3C1E08CC4D0022EE6B /* YMDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94663F3B1E08CC4D0022EE6B /* YMDragView.m */; };
 		94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E86D1E01528A0013103F /* HomePlist.plist */; };
 		94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8711E0153670013103F /* WTSystemInfo.m */; };
@@ -135,6 +136,8 @@
 		8D1B5B016BD2149E4625AAAA /* Pods-StudyTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.release.xcconfig"; sourceTree = "<group>"; };
 		944C98E41E1CA259003F1736 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
 		944C98E51E1CA259003F1736 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
+		944C98EA1E1CCFE4003F1736 /* TouchChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchChildViewController.h; sourceTree = "<group>"; };
+		944C98EB1E1CCFE4003F1736 /* TouchChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchChildViewController.m; sourceTree = "<group>"; };
 		94663F3A1E08CC4D0022EE6B /* YMDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDragView.h; sourceTree = "<group>"; };
 		94663F3B1E08CC4D0022EE6B /* YMDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDragView.m; sourceTree = "<group>"; };
 		94F2E86D1E01528A0013103F /* HomePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomePlist.plist; sourceTree = "<group>"; };
@@ -456,6 +459,8 @@
 			children = (
 				944C98E41E1CA259003F1736 /* TouchViewController.h */,
 				944C98E51E1CA259003F1736 /* TouchViewController.m */,
+				944C98EA1E1CCFE4003F1736 /* TouchChildViewController.h */,
+				944C98EB1E1CCFE4003F1736 /* TouchChildViewController.m */,
 			);
 			path = 3DTouch;
 			sourceTree = "<group>";
@@ -829,6 +834,7 @@
 				94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */,
 				78BCBFEE1E01019F002B501E /* main.m in Sources */,
 				94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */,
+				944C98EC1E1CCFE4003F1736 /* TouchChildViewController.m in Sources */,
 				94FC8B3B1E07D6D300A86EC3 /* JSUIWebViewViewController.m in Sources */,
 				78BCC03F1E011A50002B501E /* HomeVc.m in Sources */,
 				94FC8B441E07D6D300A86EC3 /* WebView+Alert.m in Sources */,

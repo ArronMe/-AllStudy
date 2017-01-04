@@ -24,6 +24,14 @@
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIconTypeSearch</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>3dTouch</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.mycompany.myapp.search</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortcutIconTypeShare</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Share</string>
