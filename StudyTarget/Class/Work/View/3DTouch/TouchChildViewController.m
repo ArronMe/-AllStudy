@@ -97,7 +97,6 @@
         NSLog(@"Began压力 ＝ %f",touch.force);
         _moveLab.text =[NSString stringWithFormat:@"压力：%f",touch.force];
         _bottom.constant = ((UITouch *)[arrayTouch lastObject]).force * 100;
-
     }
 }
 
@@ -111,7 +110,6 @@
         _moveLab.text =[NSString stringWithFormat:@"压力：%f",touch.force];
         //红色背景的label上移的高度＝压力值*100
         _bottom.constant = ((UITouch *)[arrayTouch lastObject]).force * 100;
-
     }
 }
 
@@ -123,7 +121,6 @@
         _moveLab.text =[NSString stringWithFormat:@"压力：%f",touch.force];
         _bottom.constant = ((UITouch *)[arrayTouch lastObject]).force * 100;
     }
-    
 }
 
 -(void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -136,7 +133,6 @@
         _bottom.constant = ((UITouch *)[arrayTouch lastObject]).force * 100;
     }
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

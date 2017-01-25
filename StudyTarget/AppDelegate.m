@@ -13,6 +13,8 @@
 #import "TouchChildViewController.h"
 #import "WorkVc.h"
 
+#import "TipView.h"
+
 @interface AppDelegate ()
 
 @end
@@ -32,6 +34,14 @@
 
     //创建应用图标上的3D touch快捷选项
     [self creatShortcutItem];
+    
+     //监测网络变换
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kNetWorkReachabilityChangedNotification object:nil];
+    
+    HLNetWorkReachability *reachability = [HLNetWorkReachability reachabilityWithHostName:@"www.baidu.com"];
+    self.hostReachability = reachability;
+    [reachability startNotifier];
+    
 
     return YES;
 }
@@ -81,6 +91,46 @@
     [UIApplication sharedApplication].shortcutItems = @[item];
 }
 
+#pragma mark -- 网络变化
+- (void)reachabilityChanged:(NSNotification *)notification
+{
+    HLNetWorkReachability *curReach = [notification object];
+    HLNetWorkStatus netStatus = [curReach currentReachabilityStatus];
+    
+    //动画效果
+    TipView *tipView = [[TipView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, 40)];
+    UIWindow * window = [UIApplication sharedApplication].keyWindow;
+    [window addSubview:tipView];
+    
+    [UIView animateWithDuration:5 animations:^{
+        tipView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [tipView removeFromSuperview];
+    }];
+
+    switch (netStatus) {
+        case HLNetWorkStatusNotReachable:
+            tipView.tipLab.text = @"当前网络不可用";
+            break;
+        case HLNetWorkStatusUnknown:
+            tipView.tipLab.text = @"当前网络未知";
+            break;
+        case HLNetWorkStatusWWAN2G:
+            tipView.tipLab.text = @"已切换为2G网络";
+            break;
+        case HLNetWorkStatusWWAN3G:
+            tipView.tipLab.text = @"已切换为3G网络";
+            break;
+        case HLNetWorkStatusWWAN4G:
+            tipView.tipLab.text = @"已切换为4G网络";
+            break;
+        case HLNetWorkStatusWiFi:
+            tipView.tipLab.text = @"已切换为wifi网络";
+            break;
+        default:
+            break;
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

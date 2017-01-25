@@ -15,11 +15,14 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TouchChildViewController.h"
 
+#import "TipView.h"
+
 
 @interface WorkVc () <UITableViewDelegate,UITableViewDataSource>
 {
     UITableView *_tableView;
     NSMutableArray *_dataSource;
+    TipView *_tipView;
 }
 
 @end
@@ -31,7 +34,6 @@
     // Do any additional setup after loading the view.
     [self createTableView];
     
-
     _dataSource=[[NSMutableArray alloc] initWithContentsOfFile:@""];
 }
 
