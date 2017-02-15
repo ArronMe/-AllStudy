@@ -14,14 +14,31 @@
 #import "CLDemo.h"
 
 @interface HomeVc ()
-
+@property (strong, nonatomic) NSTimer *timer;
 @end
 
 @implementation HomeVc
 
+@synthesize stepper = _stepper;
+@synthesize timer = _timer;
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //采用继承的方式实现
+    
+    //进度条的初始化
+    self.labeledProgressView = [[DALabeledCircularProgressView alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 60.0f, 60.0f)];
+    self.labeledProgressView.roundedCorners = NO;
+    [self.view addSubview:self.labeledProgressView];
+    
+    self.labeledProgressView.trackTintColor = [UIColor grayColor];
+    self.labeledProgressView.progressTintColor = [UIColor whiteColor];
+    self.labeledProgressView.thicknessRatio = 1.0f;
+    self.labeledProgressView.clockwiseProgress = NO;
+
+    [self startAnimation];
+
+       //采用继承的方式实现
     {
     CLButton * searchBtn = [CLButton buttonWithType:UIButtonTypeCustom];
     [searchBtn setImage:[UIImage imageNamed:@"search"] forState:UIControlStateNormal];
@@ -54,6 +71,30 @@
     id<CLProtocol>object = [[CLProtocolDemo alloc]initWithObject:[[CLDemo alloc] init]];
     [object doOtherThing];
 }
+
+- (void)progressChange
+{
+    // Labeled progress views
+    CGFloat progress = ![self.timer isValid] ? self.stepper.value / 10.0f : self.labeledProgressView.progress + 0.01f;
+    
+    [self.labeledProgressView setProgress:progress animated:YES];
+    
+    if (self.labeledProgressView.progress >= 1.0f && [self.timer isValid]) {
+        [self.labeledProgressView setProgress:0.f animated:YES];
+    }
+    CGFloat number= self.labeledProgressView.progress*100;
+    self.labeledProgressView.progressLabel.text = [NSString stringWithFormat:@"%.f%%", number];
+}
+
+- (void)startAnimation
+{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.03
+                                                  target:self
+                                                selector:@selector(progressChange)
+                                                userInfo:nil
+                                                 repeats:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

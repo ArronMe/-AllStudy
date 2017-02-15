@@ -14,9 +14,7 @@
 #import "LXDScanCodeController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "TouchChildViewController.h"
-
 #import "TipView.h"
-
 
 @interface WorkVc () <UITableViewDelegate,UITableViewDataSource>
 {
@@ -41,6 +39,11 @@
 {
     _tableView=[[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64) style:UITableViewStylePlain];
     __weak typeof(_tableView) weakTable = _tableView;
+
+    [_tableView addRefreshHeaderWithHandle:^{
+        NSLog(@"开始刷新");
+    }];
+    
     [_tableView setReloadBlock:^{
 
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"HomePlist" ofType:@"plist"];
@@ -72,6 +75,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"结束刷新");
+    [tableView.header endRefreshing];
+
+    
     NSDictionary *dict =_dataSource[indexPath.row];
     
     NSString *VCName=[NSString stringWithFormat:@"%@",[dict objectForKey:@"VC"]];

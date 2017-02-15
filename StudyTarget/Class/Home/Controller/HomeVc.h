@@ -10,4 +10,8 @@
 
 @interface HomeVc : BaseViewController
 
+// Labeled progress views
+@property (strong, nonatomic) DALabeledCircularProgressView *labeledProgressView;
+@property (strong, nonatomic) UIStepper *stepper;
+
 @end
