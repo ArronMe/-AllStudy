@@ -62,5 +62,11 @@
 		<key>VC</key>
 		<string>TouchViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>抽屉</string>
+		<key>VC</key>
+		<string>RightViewController</string>
+	</dict>
 </array>
 </plist>

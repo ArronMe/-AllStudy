@@ -29,6 +29,8 @@
 		78BCC0421E011AB8002B501E /* MineVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0411E011AB8002B501E /* MineVc.m */; };
 		78BCC0481E012D14002B501E /* CLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0451E012D14002B501E /* CLButton.m */; };
 		78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BCC0471E012D14002B501E /* UIButton+Layout.m */; };
+		9401D2201E65671D007C99D4 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9401D21F1E65671D007C99D4 /* RightViewController.m */; };
+		9401D2241E656E24007C99D4 /* CustomRightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9401D2231E656E24007C99D4 /* CustomRightView.m */; };
 		9409721F1E4441FF00634BCC /* SURefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409721A1E4441FF00634BCC /* SURefreshHeader.m */; };
 		940972201E4441FF00634BCC /* UIScrollView+SURefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409721C1E4441FF00634BCC /* UIScrollView+SURefresh.m */; };
 		940972211E4441FF00634BCC /* UIView+SURefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9409721E1E4441FF00634BCC /* UIView+SURefresh.m */; };
@@ -145,6 +147,10 @@
 		78BCC0461E012D14002B501E /* UIButton+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Layout.h"; sourceTree = "<group>"; };
 		78BCC0471E012D14002B501E /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
 		8D1B5B016BD2149E4625AAAA /* Pods-StudyTarget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyTarget.release.xcconfig"; path = "Pods/Target Support Files/Pods-StudyTarget/Pods-StudyTarget.release.xcconfig"; sourceTree = "<group>"; };
+		9401D21E1E65671D007C99D4 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RightViewController.h; path = RecognizeTool/RightViewController.h; sourceTree = "<group>"; };
+		9401D21F1E65671D007C99D4 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RightViewController.m; path = RecognizeTool/RightViewController.m; sourceTree = "<group>"; };
+		9401D2221E656E24007C99D4 /* CustomRightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomRightView.h; sourceTree = "<group>"; };
+		9401D2231E656E24007C99D4 /* CustomRightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomRightView.m; sourceTree = "<group>"; };
 		940972191E4441FF00634BCC /* SURefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SURefreshHeader.h; sourceTree = "<group>"; };
 		9409721A1E4441FF00634BCC /* SURefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SURefreshHeader.m; sourceTree = "<group>"; };
 		9409721B1E4441FF00634BCC /* UIScrollView+SURefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SURefresh.h"; sourceTree = "<group>"; };
@@ -491,6 +497,17 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		9401D2211E656E00007C99D4 /* 抽屉 */ = {
+			isa = PBXGroup;
+			children = (
+				9401D21E1E65671D007C99D4 /* RightViewController.h */,
+				9401D21F1E65671D007C99D4 /* RightViewController.m */,
+				9401D2221E656E24007C99D4 /* CustomRightView.h */,
+				9401D2231E656E24007C99D4 /* CustomRightView.m */,
+			);
+			name = "抽屉";
+			sourceTree = "<group>";
+		};
 		940972181E4441F600634BCC /* otherRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +591,7 @@
 				94FC8B111E07CF9500A86EC3 /* JSandOC */,
 				94F2E87D1E0174820013103F /* IdentifyViewController.h */,
 				94F2E87E1E0174820013103F /* IdentifyViewController.m */,
+				9401D2211E656E00007C99D4 /* 抽屉 */,
 				94F2E87C1E01745C0013103F /* RecognizeTool */,
 			);
 			path = View;
@@ -879,6 +897,7 @@
 				94FC8B571E07D78C00A86EC3 /* WKWebViewJSViewController.m in Sources */,
 				94FC8B741E07D7D000A86EC3 /* HighchartsWebViewController.m in Sources */,
 				9409721F1E4441FF00634BCC /* SURefreshHeader.m in Sources */,
+				9401D2201E65671D007C99D4 /* RightViewController.m in Sources */,
 				78BCC03C1E011A3D002B501E /* WorkVc.m in Sources */,
 				78BCC0301E010312002B501E /* BaseViewController.m in Sources */,
 				78B4C5241E07835A006F37AB /* CLDemo.m in Sources */,
@@ -906,6 +925,7 @@
 				7872AA231E02402200B436BB /* UITableView+PlaceHeader.m in Sources */,
 				94FC8B6A1E07D7C700A86EC3 /* JSCallOCViewController.m in Sources */,
 				94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */,
+				9401D2241E656E24007C99D4 /* CustomRightView.m in Sources */,
 				78BCBFEE1E01019F002B501E /* main.m in Sources */,
 				94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */,
 				944C98EC1E1CCFE4003F1736 /* TouchChildViewController.m in Sources */,

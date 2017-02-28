@@ -31,11 +31,11 @@
     self.labeledProgressView.roundedCorners = NO;
     [self.view addSubview:self.labeledProgressView];
     
+    //修改展示形式
     self.labeledProgressView.trackTintColor = [UIColor grayColor];
     self.labeledProgressView.progressTintColor = [UIColor whiteColor];
     self.labeledProgressView.thicknessRatio = 1.0f;
     self.labeledProgressView.clockwiseProgress = NO;
-
     [self startAnimation];
 
        //采用继承的方式实现

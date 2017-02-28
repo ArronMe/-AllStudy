@@ -113,6 +113,7 @@
     }
     else{
         viewvc = [[type alloc]init];
+        viewvc.hidesBottomBarWhenPushed=YES;
             }
     [self.navigationController pushViewController:viewvc animated:YES];
 
