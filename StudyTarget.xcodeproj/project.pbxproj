@@ -45,6 +45,8 @@
 		94663F3C1E08CC4D0022EE6B /* YMDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94663F3B1E08CC4D0022EE6B /* YMDragView.m */; };
 		9499A4271E540BDC00B4D6A5 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9499A4241E540BDC00B4D6A5 /* DACircularProgressView.m */; };
 		9499A4281E540BDC00B4D6A5 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9499A4261E540BDC00B4D6A5 /* DALabeledCircularProgressView.m */; };
+		94BEEE861E694B98004F77FE /* EaseLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BEEE851E694B98004F77FE /* EaseLoadingView.m */; };
+		94BEEE891E694D66004F77FE /* UIView+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BEEE881E694D66004F77FE /* UIView+Common.m */; };
 		94F2E86E1E01528A0013103F /* HomePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94F2E86D1E01528A0013103F /* HomePlist.plist */; };
 		94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E8711E0153670013103F /* WTSystemInfo.m */; };
 		94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F2E87E1E0174820013103F /* IdentifyViewController.m */; };
@@ -175,6 +177,10 @@
 		9499A4241E540BDC00B4D6A5 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
 		9499A4251E540BDC00B4D6A5 /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
 		9499A4261E540BDC00B4D6A5 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
+		94BEEE841E694B98004F77FE /* EaseLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseLoadingView.h; sourceTree = "<group>"; };
+		94BEEE851E694B98004F77FE /* EaseLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseLoadingView.m; sourceTree = "<group>"; };
+		94BEEE871E694D66004F77FE /* UIView+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Common.h"; path = "StudyTarget/Class/Me/Controller/UIView+Common.h"; sourceTree = SOURCE_ROOT; };
+		94BEEE881E694D66004F77FE /* UIView+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Common.m"; path = "StudyTarget/Class/Me/Controller/UIView+Common.m"; sourceTree = SOURCE_ROOT; };
 		94F2E86D1E01528A0013103F /* HomePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HomePlist.plist; sourceTree = "<group>"; };
 		94F2E8701E0153670013103F /* WTSystemInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSystemInfo.h; sourceTree = "<group>"; };
 		94F2E8711E0153670013103F /* WTSystemInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSystemInfo.m; sourceTree = "<group>"; };
@@ -456,6 +462,8 @@
 			children = (
 				78BCC0401E011AB8002B501E /* MineVc.h */,
 				78BCC0411E011AB8002B501E /* MineVc.m */,
+				94BEEE841E694B98004F77FE /* EaseLoadingView.h */,
+				94BEEE851E694B98004F77FE /* EaseLoadingView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -463,6 +471,8 @@
 		78BCC0361E0119F1002B501E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				94BEEE871E694D66004F77FE /* UIView+Common.h */,
+				94BEEE881E694D66004F77FE /* UIView+Common.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -903,6 +913,7 @@
 				78B4C5241E07835A006F37AB /* CLDemo.m in Sources */,
 				94FC8B621E07D7BF00A86EC3 /* OCCallJSViewController.m in Sources */,
 				7872AA201E02402200B436BB /* NSObject+Swizzling.m in Sources */,
+				94BEEE861E694B98004F77FE /* EaseLoadingView.m in Sources */,
 				78BCC0491E012D14002B501E /* UIButton+Layout.m in Sources */,
 				94663F3C1E08CC4D0022EE6B /* YMDragView.m in Sources */,
 				94F2E8721E0153670013103F /* WTSystemInfo.m in Sources */,
@@ -926,6 +937,7 @@
 				94FC8B6A1E07D7C700A86EC3 /* JSCallOCViewController.m in Sources */,
 				94F2E8871E01748E0013103F /* LXDScanCodeController.m in Sources */,
 				9401D2241E656E24007C99D4 /* CustomRightView.m in Sources */,
+				94BEEE891E694D66004F77FE /* UIView+Common.m in Sources */,
 				78BCBFEE1E01019F002B501E /* main.m in Sources */,
 				94F2E8811E0174820013103F /* IdentifyViewController.m in Sources */,
 				944C98EC1E1CCFE4003F1736 /* TouchChildViewController.m in Sources */,

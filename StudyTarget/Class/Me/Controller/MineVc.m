@@ -7,6 +7,7 @@
 //
 
 #import "MineVc.h"
+#import "UIView+Common.h"
 
 @interface MineVc ()
 
@@ -17,7 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view beginLoading];
+//    [UIView animateWithDuration:2 animations:^{
+//        [self.view endLoading];
+//    }];
+
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
